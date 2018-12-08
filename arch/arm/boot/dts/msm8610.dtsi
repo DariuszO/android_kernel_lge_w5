@@ -1147,6 +1147,14 @@
 	};
 };
 
+&usb_otg {
+	qcom,hsusb-otg-mode = <3>;
+	qcom,usbid-gpio = <&msm_gpio 121 0>;
+	pinctrl-names = "default";
+	pinctrl-0 = <&usbid_default>;
+	vbus_otg-supply = <&vph_pwr_vreg>;
+}
+
 &pm8110_adc_tm {
 	/* Channel Node */
 	chan@30 {
