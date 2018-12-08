@@ -22,5 +22,5 @@
 	interrupt-names = "core_irq", "async_irq", "pmic_id_irq";
 
 	qcom,hsusb-otg-mode = <3>;
-	vbus_otg-supply = <&pm8110_chg_otg>;
+	vbus_otg-supply = <&pm8110_chg>;
 };
